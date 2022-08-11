@@ -33,3 +33,10 @@ body {
   width: 20rem;
   padding-left: 20rem;
 }
+
+.hidden {
+  visibility: hidden;
+}
+
+.buttons {
+}

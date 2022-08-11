@@ -1,9 +1,10 @@
 //Declared Variables
-
+var buttons = document.querySelectorAll(".buttons");
 var startBtn = document.querySelector(".start-quiz"); //THE START QUIZ BUTTON
 var header = document.querySelector(".header"); //The h1 for question
 var intro = document.querySelector(".intro"); //Introduction
 var main = document.querySelector(".main");
+
 // var A = document.querySelector("#A");
 // var B = document.querySelector("#B");
 // var C = document.querySelector("#C");
@@ -40,7 +41,8 @@ a1.textContent = "A.It means value is undefined.";
 a2.textContent = "B. It means the value is not a number";
 a3.textContent = "C. It is a method in the window object";
 a4.textContent = "D. It is used to stringify arrays.";
-console.log(a1);
+
+// a1.classList.add("buttons");
 // function run(event) {
 //   event.preventDefault();
 //   for (i = 0; i < allQuestions.length; i++) {
@@ -55,9 +57,21 @@ startBtn.addEventListener("click", function run() {
   main.appendChild(a2);
   main.appendChild(a3);
   main.appendChild(a4);
+  a1.classList.add("buttons");
+  next();
 });
+function next() {
+  if (buttons.clicked == true) {
+    alert("button was clicked");
+  }
+}
+// });
+
+// if (){
+// a1,a2,a3,a4.classList.add("hidden")
+// }
 
 //   A.It means value is undefined.
 // B. It means the value is not a number
 // C. It is a method in the window object
-// D. It is used to stringify arrays.
+// D. It is used to stringify arrays
