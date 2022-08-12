@@ -91,7 +91,7 @@ function append(event) {
   li2.appendChild(a2);
   li3.appendChild(a3);
   li4.appendChild(a4);
-  a1.classList.add("magic");
+
   console.log(a1);
 }
 //Add text to added elements
